@@ -10,6 +10,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './views/Home';
 import About from './views/About';
+import User from './views/User';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/users/:id">
+              <User />
             </Route>
           </Switch>
         </div>
