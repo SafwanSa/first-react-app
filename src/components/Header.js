@@ -6,7 +6,7 @@ function Header() {
     <div>
       <header className='app-header'>
         <span className='app-title'>
-          AppName
+          First React App
         </span>
 
         <Navigation />

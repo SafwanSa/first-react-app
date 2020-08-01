@@ -1,24 +1,33 @@
 import React from 'react';
 import './App.css';
-import HelloWorld from './components/HelloWorld.js'
-import CounterExample from './components/CounterExample.js'
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom';
-
-
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import Home from './views/Home';
+import About from './views/About';
 
 function App() {
   return (
     <div>
-      <Header />
-      <HelloWorld name="Safwan" />
-      <Footer />
+      <Router>
+        <Header />
+        <div className="switch-container">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }

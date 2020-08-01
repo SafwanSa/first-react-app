@@ -46,9 +46,34 @@
 
 .menu-title{
   font-weight: bold;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 ul {
   padding: 0;
   list-style-type: none;
+}
+
+#home-link{
+  color: blue;
+  text-decoration: none;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;  
+}
+
+#about-link{
+  color: blue;
+  text-decoration: none;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;  
+}
+
+.switch-container{
+  padding-top: 0.75rem;
 }
